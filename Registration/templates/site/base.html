@@ -44,6 +44,13 @@
             <li><a href="{% url 'registration' %}">Регистрация</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
+            <ul class="nav navbar-nav">
+                {% if username %}
+                    <li><a href="/auth/logout">Выйти ({{ username }})</a></li>
+                {% else %}
+                    <li><a href="/auth/login">Войти2</a></li>
+                {% endif %}
+            </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
