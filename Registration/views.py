@@ -14,11 +14,11 @@ def registration(request):
 
 # не использую
 def login2(request):
-    return render(request, 'site/login.html')
+    return render(request, 'site/../loginsys/templates/auth/login.html')
 
 
 def login(request):
-    return render_to_response('site/login.html', {'noytis': notebook.objects.all(), 'username': auth.get_user(request).username})
+    return render_to_response('site/../loginsys/templates/auth/login.html', {'noytis': notebook.objects.all(), 'username': auth.get_user(request).username})
 
 
 # не использую
