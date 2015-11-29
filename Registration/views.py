@@ -1,7 +1,8 @@
 from django.shortcuts import render
+from Registration.models import notebook
 
 
-def registration (request):
+def registration(request):
     return render(request, 'site/registration.html')
 
 
@@ -10,4 +11,8 @@ def login(request):
 
 
 def home(request):
-    return render(request, 'site/home.html')
+    noytis = notebook.objects.all()
+    context = {
+        'noytis': noytis
+    }
+    return render(request, 'site/home.html', context)

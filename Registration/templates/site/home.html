@@ -6,5 +6,9 @@
 
 {% block content %}
     <h1>Дом</h1>
-        <pre>Дом</pre>
+    {% for noyti in noytis %}
+        <h4>Модель ноутбука: {{ noyti.model }}</h4>
+        <pre>Цена ноутбука: {{ noyti.cost }}
+Количество ноутбуков в наличии: {{ noyti.amount }}</pre>
+    {% endfor %}
 {% endblock %}
