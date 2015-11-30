@@ -36,8 +36,9 @@ def registration(request):
 
 def register(request):
     args = {}
+    args2 = {}
     args.update(csrf(request))
-    args['form'] = UserCreationForm(request.POST)
+    args2.update(csrf(request))
     if request.POST:
         newuser_form = UserCreationForm(request.POST)
         if newuser_form.is_valid():
@@ -47,5 +48,5 @@ def register(request):
             auth.login(request, newuser_form)
             return redirect('/')
         else:
-            args['form'] = newuser_form
-    return render_to_response('auth/register.html', args)
+            args2['est'] = "Пользователь с таким именем уже существует, или вы ввели несовпадающие пароли, или не все поля заполнены"
+    return render_to_response('auth/register.html', args2)
