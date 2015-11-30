@@ -5,11 +5,7 @@ from django.contrib import auth
 
 # не использую
 def registration2(request):
-    return render(request, 'site/registration.html')
-
-
-def registration(request):
-    return render_to_response('site/registration.html', {'noytis': notebook.objects.all(), 'username': auth.get_user(request).username})
+    return render(request, 'site/../loginsys/templates/auth/registration.html')
 
 
 # не использую

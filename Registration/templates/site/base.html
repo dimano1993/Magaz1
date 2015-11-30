@@ -40,7 +40,9 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
+             {% if not username %}
             <li><a href="{% url 'registration' %}">Регистрация</a></li>
+             {% endif %}
           </ul>
             <ul class="nav navbar-nav">
                 {% if username %}
