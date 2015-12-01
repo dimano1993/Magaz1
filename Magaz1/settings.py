@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'Registration',
     'loginsys',
+    'basket',
 )
 
 MIDDLEWARE_CLASSES = (

@@ -46,6 +46,7 @@
           </ul>
             <ul class="nav navbar-nav">
                 {% if username %}
+                    <li><a href="{% url 'basket' %}">Корзина</a></li>
                     <li><a href="/auth/logout">Выйти ({{ username }})</a></li>
                 {% else %}
                     <li><a href="/auth/login">Войти</a></li>

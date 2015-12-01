@@ -1,5 +1,5 @@
 from django.shortcuts import render, render_to_response
-from Registration.models import notebook
+from basket.models import notebook
 from django.contrib import auth
 
 

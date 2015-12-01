@@ -3,7 +3,7 @@
 from django.contrib import auth
 from django.shortcuts import render, redirect, render_to_response
 from django.template.context_processors import csrf
-from Registration.models import notebook
+from basket.models import notebook
 from django.contrib.auth.forms import UserCreationForm
 
 

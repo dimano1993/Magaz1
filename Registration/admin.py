@@ -1,4 +1,4 @@
 from django.contrib import admin
-from Registration.models import notebook
+from basket.models import notebook
 
 admin.site.register(notebook)
