@@ -6,8 +6,14 @@ class notebook(models.Model):
     model = models.CharField(max_length=100)
     cost = models.IntegerField()
     amount = models.IntegerField()
-    zakaz = models.IntegerField()
     user = models.ForeignKey(User)
 
     def __str__(self):
         return self.model
+
+
+class Otlojit(models.Model):
+    class Meta():
+        db_table = 'otloj'
+    konkrnote = models.ForeignKey(notebook)
+    zakaz = models.IntegerField(default=0)

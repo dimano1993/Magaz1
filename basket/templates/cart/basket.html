@@ -11,7 +11,9 @@
         <h4>Модель ноутбука: {{ noyti.model }}</h4>
         <pre>Цена ноутбука: {{ noyti.cost }}
 Количество ноутбуков в наличии: {{ noyti.amount }}
-Заказать ноутбуков: <input type="text" name="zakaz" id="zakaz"><form action="cart//basket/" method="post"><input class="button" type="submit" value="Отложить"></form></pre>
+Заказать ноутбуков: <input type="text" name="zakaz" id="zakaz"><form action="cart//basket/" method="post">{{ otlojit_form }}<input class="button" type="submit" value="Отложить"></form></pre>
+
+
     {% endfor %}
     {% endif %}
 {% endblock %}
