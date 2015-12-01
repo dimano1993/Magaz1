@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 
 from django.contrib import auth
-from django.shortcuts import render, redirect, render_to_response
+from django.shortcuts import redirect, render_to_response
 from django.template.context_processors import csrf
-from basket.models import notebook
 from django.contrib.auth.forms import UserCreationForm
 
 
@@ -27,11 +26,6 @@ def login(request):
 def logout(request):
     auth.logout(request)
     return redirect('/')
-
-
-def registration(request):
-    return render_to_response('auth/registration.html',
-                              {'noytis': notebook.objects.all(), 'username': auth.get_user(request).username})
 
 
 def register(request):
