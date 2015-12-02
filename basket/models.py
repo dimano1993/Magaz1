@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from django.contrib.auth.models import User
 from django.db import models
 
@@ -16,4 +17,4 @@ class Otlojit(models.Model):
     class Meta():
         db_table = 'otloj'
     konkrnote = models.ForeignKey(notebook)
-    zakaz = models.IntegerField(default=0)
+    zakaz = models.IntegerField(default=0, verbose_name="Заказать ноутбуков")

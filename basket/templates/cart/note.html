@@ -1,0 +1,19 @@
+{% extends 'site/base.html' %}
+
+{% block title %}
+{{ article.title }}
+{% endblock %}
+
+{% block content %}
+    <h1>Конкретный ноутбук</h1>
+    {% if username %}
+
+        <h4>Модель ноутбука: {{ notebook.model }}</h4>
+        <pre>Цена ноутбука: {{ notebook.cost }}
+Количество ноутбуков в наличии: {{ notebook.amount }}
+<form action="/basket/test/" method="post">{{ otlo }}{% csrf_token %}<input class="button" type="submit" value="Отложить"></form></pre>
+
+
+
+    {% endif %}
+{% endblock %}

@@ -7,3 +7,4 @@ class OtlojitForm(ModelForm):
     class Meta:
         model = Otlojit
         exclude = ['created_at']
+        fields = ['zakaz']
