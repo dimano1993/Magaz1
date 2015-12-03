@@ -16,6 +16,7 @@ class notebook(models.Model):
 class Otlojit(models.Model):
     class Meta():
         db_table = 'otloj'
-    konkrnote = models.ForeignKey(notebook)
-    #konkruser = models.ForeignKey(User)
+    konkrnote = models.ForeignKey(notebook, verbose_name="Заказаная модель ноутбука")
+    konkruser = models.ForeignKey(User, verbose_name="Пользователь, сделавший заказ")
     zakaz = models.IntegerField(default=0, verbose_name="Заказать ноутбуков")
+    user = models.TextField()

@@ -5,17 +5,13 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Конкретный ноутбук</h1>
+    <h1>Ваш заказ</h1>
     {% if username %}
-
-        <h4>Модель ноутбука: {{ notebook.model }}</h4>
-        <pre>Цена ноутбука: {{ notebook.cost }}
-Количество ноутбуков в наличии: {{ notebook.amount }}
+        <h4>Вы: {{ username }}</h4>
+    {% for zak in zakaz %}
+        <h4>Вы заказали ноутбук: {{ zak.konkrnote }}</h4>
+        <pre>В количестве: {{ zak.zakaz }}
 <form action="/basket/note/{{ notebook.id }}/add" method="post">{% csrf_token %}{{ otlo }}        {{ otloj.zakaz }}<input class="button" type="submit" value="Отложить"></form></pre>
-
-
-
-
-
+    {% endfor %}
     {% endif %}
 {% endblock %}
