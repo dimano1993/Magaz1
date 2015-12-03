@@ -17,4 +17,5 @@ class Otlojit(models.Model):
     class Meta():
         db_table = 'otloj'
     konkrnote = models.ForeignKey(notebook)
+    #konkruser = models.ForeignKey(User)
     zakaz = models.IntegerField(default=0, verbose_name="Заказать ноутбуков")
