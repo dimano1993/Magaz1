@@ -11,8 +11,9 @@
         <h4>Модель ноутбука: {{ notebook.model }}</h4>
         <pre>Цена ноутбука: {{ notebook.cost }}
 Количество ноутбуков в наличии: {{ notebook.amount }}
-<form action="/basket/note/{{ notebook.id }}/add" method="post">{% csrf_token %}{{ otlo }}        {{ otloj.zakaz }}<input class="button" type="submit" value="Отложить"></form></pre>
 
+<form action="/basket/note/{{ notebook.id }}/add" method="post">{% csrf_token %}{{ otlo }}<input class="button" type="submit" value="Отложить"></form></pre>
+                <label class="error">{{ error }}</label>
 
 
 

@@ -34,14 +34,25 @@ def addotlojit(request, note_id):
         args = {}
         args.update(csrf(request))
         # user = User.objects.get(id=note_id)
-        args["otloj"] = Otlojit.objects.all()
+        #args["otloj"] = Otlojit.objects.all()
         if form.is_valid():
-            comment = form.save(commit=False)
-            comment.konkrnote = notebook.objects.get(id=note_id)
-            comment.konkruser = auth.get_user(request)
-            comment.user = auth.get_user(request)
-            form.save()
-    return redirect('/basket/note/%s' % note_id, args)
+            #if 1:
+                #args['error'] = "Вы заказали меньше одного ноутбука"
+                #return render_to_response('cart/note.html', args)
+            #else:
+                comment = form.save(commit=False)
+                comment.konkrnote = notebook.objects.get(id=note_id)
+                comment.konkruser = auth.get_user(request)
+                comment.user = auth.get_user(request)
+                form.save()
+    return redirect('/basket/note/%s' % note_id)
+
+
+def delotlojit(request, zak_id):
+    if request.POST:
+        b = Otlojit.objects.get(id=zak_id)
+        b.delete()
+    return redirect('/basket/zakaz')
 
 
 def zakaz(request):
