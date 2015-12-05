@@ -32,7 +32,7 @@ def delete(request, zak_id):
         prepreuser = b.user
         preuser = User.objects.get(username=prepreuser)
         user = preuser.id
-        b.sostoyanie = "Заказ Удалён"
+        b.sostoyanie = "Заказ удалён"
         b.save()
     return redirect('/show_users/%s' % user)
 
@@ -48,4 +48,16 @@ def ok(request, zak_id):
         b.sostoyanie = "Заказ обработан"
         note.save()
         b.save()
+    return redirect('/show_users/%s' % user)
+
+
+def doz(request, zak_id):
+    if request.POST:
+        b = Otlojit.objects.get(id=zak_id)
+        prepreuser = b.user
+        preuser = User.objects.get(username=prepreuser)
+        user = preuser.id
+        note = notebook.objects.get(id=b.konkrnote_id)
+        note.amount = note.amount- (note.amount - b.zakaz)
+        note.save()
     return redirect('/show_users/%s' % user)

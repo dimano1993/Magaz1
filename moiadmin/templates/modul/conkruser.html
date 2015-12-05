@@ -18,7 +18,7 @@
                     {% if nout.id == zak.konkrnote_id %}
                         {% if nout.id == zak.konkrnote_id %}
                             {% if zak.zakaz > nout.amount %}
-                                <form action="/show_users/{{ zak.id }}/del" method="post">{% csrf_token %}<input class="button" type="submit" value="Дозаказать"></form>
+                                <form action="/show_users/{{ zak.id }}/doz" method="post">{% csrf_token %}<input class="button" type="submit" value="Дозаказать"></form>
                             {% endif %}
                         {% endif %}
                         {% if nout.id == zak.konkrnote_id %}
