@@ -13,7 +13,7 @@
 Количество ноутбуков в наличии: {{ notebook.amount }}
 
 <form action="/basket/note/{{ notebook.id }}/add" method="post">{% csrf_token %}{{ otlo }}<input class="button" type="submit" value="Отложить"></form></pre>
-                <label class="error">{{ error }}</label>
+
 
 
 
