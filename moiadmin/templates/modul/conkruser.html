@@ -9,6 +9,6 @@
     {% for zak in zakaz %}
         <h4>Вы заказали ноутбук: {{ zak.konkrnote }}</h4>
         <pre>В количестве: {{ zak.zakaz }}
-<form action="/basket/{{ zak.id }}/del" method="post">{% csrf_token %}{{ otlo }}<input class="button" type="submit" value="Удалить"></form></pre>
+<form action="/show_users/{{ zak.id }}/del" method="post">{% csrf_token %}{{ otlo }}<input class="button" type="submit" value="Удалить"></form></pre>
     {% endfor %}
 {% endblock %}
