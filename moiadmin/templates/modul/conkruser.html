@@ -7,7 +7,7 @@
 {% block content %}
     {% if username == 'admin' %}
         <h1>Заказ пользователя {{ user }} </h1>
-        {% for zak in zakaz %}
+        {% for zak in zakaz reversed %}
             <h4>Пользователь заказал ноутбук: {{ zak.konkrnote }}</h4>
             <pre>В количестве: {{ zak.zakaz }}</pre>
             {% for nout in noytis %}

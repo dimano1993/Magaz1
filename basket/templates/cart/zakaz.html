@@ -8,7 +8,7 @@
     <h1>Ваш заказ</h1>
     {% if username %}
         <h4>Вы: {{ username }}</h4>
-    {% for zak in zakaz %}
+    {% for zak in zakaz reversed %}
         <h4>Вы заказали ноутбук: {{ zak.konkrnote }}</h4>
         <pre>В количестве: {{ zak.zakaz }}
 Состояние заказа: {{ zak.sostoyanie }}
