@@ -32,7 +32,8 @@ def delete(request, zak_id):
         prepreuser = b.user
         preuser = User.objects.get(username=prepreuser)
         user = preuser.id
-        b.delete()
+        b.sostoyanie = "Заказ Удалён"
+        b.save()
     return redirect('/show_users/%s' % user)
 
 
