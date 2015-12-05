@@ -44,5 +44,7 @@ def ok(request, zak_id):
         user = preuser.id
         note = notebook.objects.get(id=b.konkrnote_id)
         note.amount = note.amount - b.zakaz
+        b.sostoyanie = "Заказ обработан"
         note.save()
+        b.save()
     return redirect('/show_users/%s' % user)

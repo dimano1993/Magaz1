@@ -20,3 +20,4 @@ class Otlojit(models.Model):
     konkruser = models.ForeignKey(User, verbose_name="Пользователь, сделавший заказ")
     zakaz = models.PositiveIntegerField(default=0, verbose_name="Заказать ноутбуков")
     user = models.TextField()
+    sostoyanie = models.CharField(default="В обработке", max_length=100)

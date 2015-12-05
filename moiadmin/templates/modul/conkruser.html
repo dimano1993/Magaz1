@@ -14,18 +14,28 @@
                 {% if nout.id == zak.konkrnote_id %}
                 <pre>Доступно в наличии: {{ nout.amount }}</pre>
                 {% endif %}
-                {% if nout.id == zak.konkrnote_id %}
-                    {% if zak.zakaz > nout.amount %}
-                        <form action="/show_users/{{ zak.id }}/del" method="post">{% csrf_token %}<input class="button" type="submit" value="Дозаказать"></form>
+                {% if zak.sostoyanie == "В обработке" %}
+                    {% if nout.id == zak.konkrnote_id %}
+                        {% if nout.id == zak.konkrnote_id %}
+                            {% if zak.zakaz > nout.amount %}
+                                <form action="/show_users/{{ zak.id }}/del" method="post">{% csrf_token %}<input class="button" type="submit" value="Дозаказать"></form>
+                            {% endif %}
+                        {% endif %}
+                        {% if nout.id == zak.konkrnote_id %}
+                            {% if zak.zakaz <= nout.amount %}
+                                <form action="/show_users/{{ zak.id }}/ok" method="post">{% csrf_token %}<input class="button" type="submit" value="Подтвердить продажу"></form>
+                            {% endif %}
+                        {% endif %}
                     {% endif %}
                 {% endif %}
-                {% if nout.id == zak.konkrnote_id %}
-                    {% if zak.zakaz <= nout.amount %}
-                        <form action="/show_users/{{ zak.id }}/ok" method="post">{% csrf_token %}<input class="button" type="submit" value="Подтвердить продажу"></form>
-                    {% endif %}
-                        {% endif %}
-                    {% endfor %}
-        <form action="/show_users/{{ zak.id }}/del" method="post">{% csrf_token %}{{ otlo }}<input class="button" type="submit" value="Удалить"></form>
+            {% endfor %}
+
+            {% if zak.sostoyanie != "В обработке" %}
+                {{ zak.sostoyanie }}
+            {% endif %}
+            {% if zak.sostoyanie == "В обработке" %}
+                <form action="/show_users/{{ zak.id }}/del" method="post">{% csrf_token %}{{ otlo }}<input class="button" type="submit" value="Удалить"></form>
+            {% endif %}
         {% endfor %}
     {% endif %}
 {% endblock %}
