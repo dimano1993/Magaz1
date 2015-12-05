@@ -20,6 +20,7 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^auth/', include('loginsys.urls')),
     url(r'^basket/', include('basket.urls')),
+    url(r'^show_users/', include('moiadmin.urls')),
     url(r'^', include('Registration.urls')),
 
 ]

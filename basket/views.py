@@ -1,3 +1,4 @@
+from itertools import count
 from django.contrib import auth
 from django.contrib.auth.models import User
 from django.shortcuts import render_to_response, redirect, get_object_or_404
@@ -21,6 +22,11 @@ def show_note(request, note_id):
     args = {}
     args.update(csrf(request))
     note = get_object_or_404(notebook, id=note_id)
+
+    #yslovie = Otlojit.objects.get()
+    #if yslovie > 0:
+
+
     args["noytis"] = notebook.objects.all()
     args["username"] = auth.get_user(request).username
     args["otlo"] = otlojit_form
@@ -33,10 +39,12 @@ def addotlojit(request, note_id):
         form = OtlojitForm(request.POST)
         args = {}
         args.update(csrf(request))
-        # user = User.objects.get(id=note_id)
-        #args["otloj"] = Otlojit.objects.all()
+        user = auth.get_user(request)
+        konkr2 = Otlojit.objects.all()
+        konkr3 = konkr2.order_by('-id')
+        #konkr = Otlojit.objects.filter(user=user).order_by('-id')
         if form.is_valid():
-            #if 1:
+            #if konkr.zakaz > 0:
                 #args['error'] = "Вы заказали меньше одного ноутбука"
                 #return render_to_response('cart/note.html', args)
             #else:

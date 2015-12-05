@@ -1,0 +1,12 @@
+{% extends 'site/base.html' %}
+
+{% block title %}
+{{ article.title }}
+{% endblock %}
+
+{% block content %}
+    <h1>Список пользователей</h1>
+    {% for us in users %}
+        <h4><a href="/show_users/{{ us.id }}">{{ us.username }}</a></h4>
+    {% endfor %}
+{% endblock %}

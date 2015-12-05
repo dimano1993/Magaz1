@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'Registration',
     'loginsys',
     'basket',
+    'moiadmin',
 )
 
 MIDDLEWARE_CLASSES = (

@@ -18,5 +18,5 @@ class Otlojit(models.Model):
         db_table = 'otloj'
     konkrnote = models.ForeignKey(notebook, verbose_name="Заказаная модель ноутбука")
     konkruser = models.ForeignKey(User, verbose_name="Пользователь, сделавший заказ")
-    zakaz = models.IntegerField(default=0, verbose_name="Заказать ноутбуков")
+    zakaz = models.PositiveIntegerField(default=0, verbose_name="Заказать ноутбуков")
     user = models.TextField()
