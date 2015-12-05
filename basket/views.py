@@ -62,5 +62,3 @@ def zakaz(request):
     args["username"] = auth.get_user(request).username
     args["zakaz"] = Otlojit.objects.filter(user=user)
     return render_to_response('cart/zakaz.html', args)
-
-#test
