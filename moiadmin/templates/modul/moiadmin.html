@@ -7,6 +7,13 @@
 {% block content %}
     {% if username == 'admin' %}
     <h1>Список пользователей</h1>
+
+
+    <h4>Список пользователей, у которых есть необработанные заказы:</h4>
+    {% for zak in moiusers reversed %}
+                    <h4><a href="/show_users/{{ zak.konkruser_id }}">{{ zak.user }}</a></h4>
+    {% endfor %}
+    <h4>Список всех пользователей:</h4>
     {% for us in users %}
         <h4><a href="/show_users/{{ us.id }}">{{ us.username }}</a></h4>
     {% endfor %}

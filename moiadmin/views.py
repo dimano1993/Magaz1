@@ -11,6 +11,15 @@ def show_users(request):
     args.update(csrf(request))
     args["users"] = User.objects.all()
     args["username"] = auth.get_user(request).username
+    users = User.objects.all()
+    otl = Otlojit.objects.filter(sostoyanie="В обработке")
+    b = []
+    for us in users:
+        for a in otl:
+            if a.konkruser_id == us.id:
+                b.append(a)
+                break
+    args["moiusers"] = b
     return render_to_response('modul/moiadmin.html', args)
 
 
