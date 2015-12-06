@@ -45,7 +45,13 @@ def addotlojit(request, note_id):
             test.delete()
         except:
             test = 0
-    return redirect('/basket/note/%s' % note_id)
+
+        args = {}
+        args.update(csrf(request))
+        user = auth.get_user(request)
+        args["username"] = auth.get_user(request).username
+        args["zakaz"] = Otlojit.objects.filter(user=user)
+    return render_to_response('cart/zakaz.html', args)
 
 
 def delotlojit(request, zak_id):

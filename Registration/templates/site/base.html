@@ -46,8 +46,8 @@
           </ul>
             <ul class="nav navbar-nav">
                 {% if username %}
-                    <li><a href="{% url 'basket' %}">Корзина</a></li>
-                    <li><a href="{% url 'zakaz' %}">Мой заказ</a></li>
+                    <li><a href="{% url 'basket' %}">Каталог</a></li>
+                    <li><a href="{% url 'zakaz' %}">Корзина</a></li>
                         {% if username == 'admin' %}
                             <li><a href="{% url 'show_users' %}">Панель администратора</a></li>
                         {% endif %}

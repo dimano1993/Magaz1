@@ -5,13 +5,13 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Конкретный ноутбук</h1>
+    <h1></h1>
     {% if username %}
 
         <h4>Модель ноутбука: {{ notebook.model }}</h4>
         <pre>Цена ноутбука: {{ notebook.cost }}
 Количество ноутбуков в наличии: {{ notebook.amount }}
-
+Описание ноутбука: {{ notebook.description }}
 <form action="/basket/note/{{ notebook.id }}/add" method="post">{% csrf_token %}{{ otlo }}<input class="button" type="submit" value="Отложить"></form></pre>
 
 

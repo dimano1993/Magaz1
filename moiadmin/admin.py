@@ -1,3 +1,9 @@
 from django.contrib import admin
+from basket.models import Otlojit
 
-# Register your models here.
+
+class OtlojitAdmin(admin.ModelAdmin):
+    fields = ['konkrnote', 'konkruser', 'zakaz']
+
+
+admin.site.register(Otlojit, OtlojitAdmin)
