@@ -21,4 +21,8 @@ python:
 # command to install dependencies
 install: "pip install -r requirements.txt"
 # command to run tests
-script: "test.sh"
+script:
+./manage.py test
+
+#test code style
+py.test --pep8
