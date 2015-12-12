@@ -28,3 +28,5 @@ script:
 - py.test --pep8
 
 - coverage run manage.py test
+
+- coverage report
