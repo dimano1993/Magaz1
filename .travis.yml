@@ -1,25 +1,14 @@
-#specify branch
-branches:
-  only:
-    - master
-
-notifications:
-  email:
-    on_success: always
-    on_failure: always
-
 language: python
 python:
 #  - "2.6"
 #  - "2.7"
 #  - "3.2"
 #  - "3.3"
-#  - "3.4"
+   - "3.4"
    - "3.5"
 #  - "3.5-dev" # 3.5 development branch
 #  - "nightly" # currently points to 3.6-dev
 # command to install dependencies
 install: "pip install -r requirements.txt"
 # command to run tests
-script:
-- python flake8 . &&  manage.py test
+script: ./manage.py test
