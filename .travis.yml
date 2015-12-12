@@ -25,4 +25,4 @@ script:
 - python manage.py test
 
 #test code style
-py.test --pep8
+- py.test --pep8
