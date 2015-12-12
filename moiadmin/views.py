@@ -67,6 +67,6 @@ def doz(request, zak_id):
         preuser = User.objects.get(username=prepreuser)
         user = preuser.id
         note = notebook.objects.get(id=b.konkrnote_id)
-        note.amount = note.amount- (note.amount - b.zakaz)
+        note.amount = note.amount - (note.amount - b.zakaz)
         note.save()
     return redirect('/show_users/%s' % user)
