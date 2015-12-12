@@ -42,5 +42,6 @@ def register(request):
             auth.login(request, newuser_form)
             return redirect('/')
         else:
-            args2['est'] = "Пользователь с таким именем уже существует, или вы ввели несовпадающие пароли, или не все поля заполнены"
+            args2['est'] = "Пользователь с таким именем уже существует, или вы ввели несовпадающие пароли, " \
+                           "или не все поля заполнены"
     return render_to_response('auth/register.html', args2)
