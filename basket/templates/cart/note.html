@@ -12,7 +12,7 @@
         <pre>Цена ноутбука: {{ notebook.cost }}
 Количество ноутбуков в наличии: {{ notebook.amount }}
 Описание ноутбука: {{ notebook.description }}
-<form action="/basket/note/{{ notebook.id }}/add" method="post">{% csrf_token %}{{ otlo }}<input class="button" type="submit" value="Отложить"></form></pre>
+<form action="/basket/note/{{ notebook.id }}/add" method="post">{% csrf_token %}{{ otlo }}<input class="button" type="submit" value="Заказать"></form></pre>
 
 
 
