@@ -14,6 +14,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='otlojit',
             name='zakaz',
-            field=models.PositiveIntegerField(default=0, verbose_name='Заказать ноутбуков'),
+            field=models.PositiveIntegerField(default=0,
+                                              verbose_name='Заказать ноутбуков'),
         ),
     ]

@@ -18,27 +18,32 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='notebook',
             name='description',
-            field=models.TextField(verbose_name='Описание ноутбука', default=0),
+            field=models.TextField(verbose_name=
+                                   'Описание ноутбука', default=0),
             preserve_default=False,
         ),
         migrations.AlterField(
             model_name='notebook',
             name='amount',
-            field=models.IntegerField(verbose_name='Количество ноутбуков в наличии'),
+            field=models.IntegerField(verbose_name=
+                                      'Количество ноутбуков в наличии'),
         ),
         migrations.AlterField(
             model_name='notebook',
             name='cost',
-            field=models.IntegerField(verbose_name='Стоимость ноутбука'),
+            field=models.IntegerField(verbose_name=
+                                      'Стоимость ноутбука'),
         ),
         migrations.AlterField(
             model_name='notebook',
             name='model',
-            field=models.CharField(max_length=100, verbose_name='Модель ноутбука'),
+            field=models.CharField(max_length=100,
+                                   verbose_name='Модель ноутбука'),
         ),
         migrations.AlterField(
             model_name='otlojit',
             name='user',
-            field=models.TextField(verbose_name='Пользователь, заказавший ноутбук'),
+            field=models.TextField(verbose_name=
+                                   'Пользователь, заказавший ноутбук'),
         ),
     ]

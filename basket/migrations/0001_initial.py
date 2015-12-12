@@ -15,7 +15,8 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='notebook',
             fields=[
-                ('id', models.AutoField(auto_created=True, verbose_name='ID', primary_key=True, serialize=False)),
+                ('id', models.AutoField(auto_created=True, verbose_name='ID',
+                                        primary_key=True, serialize=False)),
                 ('model', models.CharField(max_length=100)),
                 ('cost', models.IntegerField()),
                 ('amount', models.IntegerField()),

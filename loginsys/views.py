@@ -37,11 +37,13 @@ def register(request):
         newuser_form = UserCreationForm(request.POST)
         if newuser_form.is_valid():
             newuser_form.save()
-            newuser_form = auth.authenticate(username=newuser_form.cleaned_data['username'],
-                                             password=newuser_form.cleaned_data['password2'])
+            newuser_form = auth.authenticate \
+                (username=newuser_form.cleaned_data['username'],
+                 password=newuser_form.cleaned_data['password2'])
             auth.login(request, newuser_form)
             return redirect('/')
         else:
-            args2['est'] = "Пользователь с таким именем уже существует, или вы ввели несовпадающие пароли, " \
+            args2['est'] = "Пользователь с таким именем уже существует," \
+                           " или вы ввели несовпадающие пароли, " \
                            "или не все поля заполнены"
     return render_to_response('auth/register.html', args2)
