@@ -37,7 +37,7 @@ def register(request):
         newuser_form = UserCreationForm(request.POST)
         if newuser_form.is_valid():
             newuser_form.save()
-            newuser_form = auth.authenticate\
+            newuser_form = auth.authenticate \
                 (username=newuser_form.cleaned_data['username'],
                  password=newuser_form.cleaned_data['password2'])
             auth.login(request, newuser_form)
