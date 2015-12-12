@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a2b2dc5-72bc-4e11-b79d-2dee623446b2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Registration/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/Registration/migrations/0001_initial.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basket/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/basket/migrations/0001_initial.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basket/migrations/0003_auto_20151202_0012.py" afterPath="$PROJECT_DIR$/basket/migrations/0003_auto_20151202_0012.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basket/migrations/0005_auto_20151203_1830.py" afterPath="$PROJECT_DIR$/basket/migrations/0005_auto_20151203_1830.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basket/migrations/0009_auto_20151203_2134.py" afterPath="$PROJECT_DIR$/basket/migrations/0009_auto_20151203_2134.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basket/migrations/0011_auto_20151204_2116.py" afterPath="$PROJECT_DIR$/basket/migrations/0011_auto_20151204_2116.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basket/migrations/0014_auto_20151206_1513.py" afterPath="$PROJECT_DIR$/basket/migrations/0014_auto_20151206_1513.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Registration/admin.py" afterPath="$PROJECT_DIR$/Registration/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basket/admin.py" afterPath="$PROJECT_DIR$/basket/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basket/forms.py" afterPath="$PROJECT_DIR$/basket/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basket/models.py" afterPath="$PROJECT_DIR$/basket/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Magaz1/settings.py" afterPath="$PROJECT_DIR$/Magaz1/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basket/tests.py" afterPath="$PROJECT_DIR$/basket/tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basket/urls.py" afterPath="$PROJECT_DIR$/basket/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/moiadmin/urls.py" afterPath="$PROJECT_DIR$/moiadmin/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Registration/views.py" afterPath="$PROJECT_DIR$/Registration/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basket/views.py" afterPath="$PROJECT_DIR$/basket/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loginsys/views.py" afterPath="$PROJECT_DIR$/loginsys/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -43,26 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="0001_initial.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/basket/migrations/0001_initial.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="493">
-              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="0003_auto_20151202_0012.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/basket/migrations/0003_auto_20151202_0012.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="595">
-              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="0004_auto_20151202_1447.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basket/migrations/0004_auto_20151202_1447.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -123,11 +86,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/moiadmin/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20656136" vertical-offset="0" max-vertical-offset="823">
+            <state vertical-scroll-proportion="-6.8" vertical-offset="0" max-vertical-offset="272">
               <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3408019" vertical-offset="0" max-vertical-offset="848">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+              <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -160,7 +143,6 @@
       <list>
         <option value="$PROJECT_DIR$/basket/templates/cart/note.html" />
         <option value="$PROJECT_DIR$/.travis.yml" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/Magaz1/settings.py" />
         <option value="$PROJECT_DIR$/Registration/admin.py" />
         <option value="$PROJECT_DIR$/Registration/views.py" />
@@ -179,6 +161,7 @@
         <option value="$PROJECT_DIR$/basket/migrations/0014_auto_20151206_1513.py" />
         <option value="$PROJECT_DIR$/loginsys/views.py" />
         <option value="$PROJECT_DIR$/moiadmin/urls.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -537,7 +520,19 @@
       <option name="project" value="LOCAL" />
       <updated>1449926405565</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="PEP8">
+      <created>1449927066599</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1449927066599</updated>
+    </task>
+    <task id="LOCAL-00012" summary="PEP8">
+      <created>1449927087167</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1449927087167</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -587,7 +582,8 @@
     <MESSAGE value=".travis.yml" />
     <MESSAGE value="Небольшие исправления кода." />
     <MESSAGE value="Update .travis.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update .travis.yml" />
+    <MESSAGE value="PEP8" />
+    <option name="LAST_COMMIT_MESSAGE" value="PEP8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -762,22 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-          <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Magaz1/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-29.52" vertical-offset="1132" max-vertical-offset="1972">
@@ -948,8 +928,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/moiadmin/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20656136" vertical-offset="0" max-vertical-offset="823">
+        <state vertical-scroll-proportion="-6.8" vertical-offset="0" max-vertical-offset="272">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3408019" vertical-offset="0" max-vertical-offset="848">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding />
         </state>
       </provider>
