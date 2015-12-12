@@ -9,6 +9,7 @@ class HomePageTest(TestCase):
         c = Client()
         response = c.get('/')
         self.assertEquals(response.status_code, 200)
+
     # Тест на добавление новой модели нотбука
     def setUp(self):
         self.note = notebook.objects.create(model='NewNotebook',
