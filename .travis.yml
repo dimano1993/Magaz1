@@ -1,3 +1,13 @@
+#specify branch
+branches:
+  only:
+    - master
+
+notifications:
+  email:
+    on_success: always
+    on_failure: always
+
 language: python
 python:
 #  - "2.6"
