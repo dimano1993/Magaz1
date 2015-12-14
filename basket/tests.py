@@ -16,3 +16,11 @@ class HomePageTest(TestCase):
                                             cost=1,
                                             amount=2)
         self.assertEqual(str(self.note), 'NewNotebook')
+    # Тест на создание нового пользователя
+    def test_na_novogo_usera(self):
+        self.username = 'New'
+        self.password = 'New'
+        self.user = User.objects.create_user(self.username, 'mail@example.com', self.password)
+        self.user.is_staff = False
+        self.user.is_superuser = False
+        self.user.save()
