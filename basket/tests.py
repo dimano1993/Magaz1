@@ -16,6 +16,15 @@ class HomePageTest(TestCase):
                                             cost=1,
                                             amount=2)
         self.assertEqual(str(self.note), 'NewNotebook')
+
+class PostAdminTest(TestCase):
+    # Тест на авторизацию НЕ admin'а в админке
+    def test_na_vhod_NE_admina(self):
+        c = Client()
+        c.login(username='test', password='test')
+        response = c.get('/admin/')
+        self.assertEquals(response.status_code, 302)
+
     # Тест на создание нового пользователя
     def test_na_novogo_usera(self):
         self.username = 'New'
