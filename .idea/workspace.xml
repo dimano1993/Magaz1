@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a2b2dc5-72bc-4e11-b79d-2dee623446b2" name="Default" comment="">
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basket/models.py" />
       <change type="DELETED" beforePath="G:\Zaikin\Magaz4\тест на не админ" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+=======
+>>>>>>> По мелочам...
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -144,8 +147,8 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="dmitryross2805" />
         <option value="dimano1993" />
+        <option value="dmitryross2805" />
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -611,7 +614,13 @@
       <option name="project" value="LOCAL" />
       <updated>1449934385986</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="По мелочам...">
+      <created>1450291290571</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1450291290571</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -686,7 +695,8 @@
     <MESSAGE value="Update .travis.yml" />
     <MESSAGE value="PEP8" />
     <MESSAGE value="тест на добавление новой модели" />
-    <option name="LAST_COMMIT_MESSAGE" value="тест на добавление новой модели" />
+    <MESSAGE value="По мелочам..." />
+    <option name="LAST_COMMIT_MESSAGE" value="По мелочам..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
