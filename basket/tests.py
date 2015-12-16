@@ -17,6 +17,7 @@ class HomePageTest(TestCase):
                                             amount=2)
         self.assertEqual(str(self.note), 'NewNotebook')
 
+
 class PostAdminTest(TestCase):
     # Тест на авторизацию НЕ admin'а в админке
     def test_na_vhod_NE_admina(self):
@@ -29,7 +30,8 @@ class PostAdminTest(TestCase):
     def test_na_novogo_usera(self):
         self.username = 'New'
         self.password = 'New'
-        self.user = User.objects.create_user(self.username, 'mail@example.com', self.password)
+        self.user = User.objects.create_user\
+            (self.username, 'mail@example.com', self.password)
         self.user.is_staff = False
         self.user.is_superuser = False
         self.user.save()
